@@ -44,7 +44,7 @@ The script deploys the application in terminal. The script provides answer to th
 
 ### Build and Deploy
 ---
-To build and deploy locally: Please refer to Makefile for details,
+To build and deploy locally: Please refer to Makefile for details.
 ```shell
 make
 ```
