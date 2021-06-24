@@ -1,0 +1,8 @@
+*/__pycache__
+.vscode
+.vscode/*
+.mypy_cache
+.pytest_cache
+spark-warehouse
+analysis-note
+data/*

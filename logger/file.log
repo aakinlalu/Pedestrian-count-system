@@ -1,0 +1,9 @@
+{"link": "https://data.melbourne.vic.gov.au/resource/b2ak-trbp.json?year=2021&month=May", "action_status": "started", "timestamp": 1624514268.244873, "task_uuid": "d764002e-ecf4-456e-b5a7-288363953790", "action_type": "capture api link", "task_level": [1]}
+{"status": 200, "timestamp": 1624514269.902375, "task_uuid": "d764002e-ecf4-456e-b5a7-288363953790", "task_level": [2], "message_type": "info"}
+{"action_status": "succeeded", "timestamp": 1624514269.906728, "task_uuid": "d764002e-ecf4-456e-b5a7-288363953790", "action_type": "capture api link", "task_level": [3]}
+{"file_path": "/var/folders/_r/_ksyf2w92zq3j52jvp92rlsm0000gn/T/tmpcmyehg9b/2021_file.json", "action_status": "started", "timestamp": 1624514269.9106932, "task_uuid": "b939b3c8-5e4f-4ffb-8419-9c54dc4bccb8", "action_type": "write_json_to_local", "task_level": [1]}
+{"link": "https://data.melbourne.vic.gov.au/resource/b2ak-trbp.json?year=2021&month=May", "action_status": "started", "timestamp": 1624514269.91082, "task_uuid": "b939b3c8-5e4f-4ffb-8419-9c54dc4bccb8", "action_type": "capture api link", "task_level": [2, 1]}
+{"status": 200, "timestamp": 1624514271.3338492, "task_uuid": "b939b3c8-5e4f-4ffb-8419-9c54dc4bccb8", "task_level": [2, 2], "message_type": "info"}
+{"action_status": "succeeded", "timestamp": 1624514271.337981, "task_uuid": "b939b3c8-5e4f-4ffb-8419-9c54dc4bccb8", "action_type": "capture api link", "task_level": [2, 3]}
+{"number_of_rows": 1000, "timestamp": 1624514271.338159, "task_uuid": "b939b3c8-5e4f-4ffb-8419-9c54dc4bccb8", "task_level": [3], "message_type": "info"}
+{"action_status": "succeeded", "timestamp": 1624514271.345202, "task_uuid": "b939b3c8-5e4f-4ffb-8419-9c54dc4bccb8", "action_type": "write_json_to_local", "task_level": [4]}
