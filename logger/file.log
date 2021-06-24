@@ -1,9 +1,96 @@
-{"link": "https://data.melbourne.vic.gov.au/resource/b2ak-trbp.json?year=2021&month=May", "action_status": "started", "timestamp": 1624514268.244873, "task_uuid": "d764002e-ecf4-456e-b5a7-288363953790", "action_type": "capture api link", "task_level": [1]}
-{"status": 200, "timestamp": 1624514269.902375, "task_uuid": "d764002e-ecf4-456e-b5a7-288363953790", "task_level": [2], "message_type": "info"}
-{"action_status": "succeeded", "timestamp": 1624514269.906728, "task_uuid": "d764002e-ecf4-456e-b5a7-288363953790", "action_type": "capture api link", "task_level": [3]}
-{"file_path": "/var/folders/_r/_ksyf2w92zq3j52jvp92rlsm0000gn/T/tmpcmyehg9b/2021_file.json", "action_status": "started", "timestamp": 1624514269.9106932, "task_uuid": "b939b3c8-5e4f-4ffb-8419-9c54dc4bccb8", "action_type": "write_json_to_local", "task_level": [1]}
-{"link": "https://data.melbourne.vic.gov.au/resource/b2ak-trbp.json?year=2021&month=May", "action_status": "started", "timestamp": 1624514269.91082, "task_uuid": "b939b3c8-5e4f-4ffb-8419-9c54dc4bccb8", "action_type": "capture api link", "task_level": [2, 1]}
-{"status": 200, "timestamp": 1624514271.3338492, "task_uuid": "b939b3c8-5e4f-4ffb-8419-9c54dc4bccb8", "task_level": [2, 2], "message_type": "info"}
-{"action_status": "succeeded", "timestamp": 1624514271.337981, "task_uuid": "b939b3c8-5e4f-4ffb-8419-9c54dc4bccb8", "action_type": "capture api link", "task_level": [2, 3]}
-{"number_of_rows": 1000, "timestamp": 1624514271.338159, "task_uuid": "b939b3c8-5e4f-4ffb-8419-9c54dc4bccb8", "task_level": [3], "message_type": "info"}
-{"action_status": "succeeded", "timestamp": 1624514271.345202, "task_uuid": "b939b3c8-5e4f-4ffb-8419-9c54dc4bccb8", "action_type": "write_json_to_local", "task_level": [4]}
+{"file_path": "data/raw/2009_file.json", "action_status": "started", "timestamp": 1624526856.61104, "task_uuid": "91f8b30a-3160-4919-8478-07b1f5271d20", "action_type": "write_json_to_local", "task_level": [1]}
+{"link": "https://data.melbourne.vic.gov.au/resource/b2ak-trbp.json?year=2009", "action_status": "started", "timestamp": 1624526856.611221, "task_uuid": "91f8b30a-3160-4919-8478-07b1f5271d20", "action_type": "capture api link", "task_level": [2, 1]}
+{"file_path": "data/raw/2010_file.json", "action_status": "started", "timestamp": 1624526856.637089, "task_uuid": "bfb3a132-472d-46f8-b8e7-e5cabc8d02a4", "action_type": "write_json_to_local", "task_level": [1]}
+{"link": "https://data.melbourne.vic.gov.au/resource/b2ak-trbp.json?year=2010", "action_status": "started", "timestamp": 1624526856.6371908, "task_uuid": "bfb3a132-472d-46f8-b8e7-e5cabc8d02a4", "action_type": "capture api link", "task_level": [2, 1]}
+{"file_path": "data/raw/2011_file.json", "action_status": "started", "timestamp": 1624526856.637662, "task_uuid": "c943c931-d897-4f46-ac90-958ebc3d138c", "action_type": "write_json_to_local", "task_level": [1]}
+{"link": "https://data.melbourne.vic.gov.au/resource/b2ak-trbp.json?year=2011", "action_status": "started", "timestamp": 1624526856.637722, "task_uuid": "c943c931-d897-4f46-ac90-958ebc3d138c", "action_type": "capture api link", "task_level": [2, 1]}
+{"file_path": "data/raw/2012_file.json", "action_status": "started", "timestamp": 1624526856.638035, "task_uuid": "1430e477-326a-45c2-a5c5-455bdda0019d", "action_type": "write_json_to_local", "task_level": [1]}
+{"link": "https://data.melbourne.vic.gov.au/resource/b2ak-trbp.json?year=2012", "action_status": "started", "timestamp": 1624526856.638088, "task_uuid": "1430e477-326a-45c2-a5c5-455bdda0019d", "action_type": "capture api link", "task_level": [2, 1]}
+{"file_path": "data/raw/2013_file.json", "action_status": "started", "timestamp": 1624526856.638473, "task_uuid": "36f89e18-ffa5-43e2-9bff-f8559c9db1a6", "action_type": "write_json_to_local", "task_level": [1]}
+{"link": "https://data.melbourne.vic.gov.au/resource/b2ak-trbp.json?year=2013", "action_status": "started", "timestamp": 1624526856.63853, "task_uuid": "36f89e18-ffa5-43e2-9bff-f8559c9db1a6", "action_type": "capture api link", "task_level": [2, 1]}
+{"file_path": "data/raw/2014_file.json", "action_status": "started", "timestamp": 1624526856.638834, "task_uuid": "3ac1247a-f9ba-4531-a505-af912ea61277", "action_type": "write_json_to_local", "task_level": [1]}
+{"link": "https://data.melbourne.vic.gov.au/resource/b2ak-trbp.json?year=2014", "action_status": "started", "timestamp": 1624526856.63889, "task_uuid": "3ac1247a-f9ba-4531-a505-af912ea61277", "action_type": "capture api link", "task_level": [2, 1]}
+{"file_path": "data/raw/2015_file.json", "action_status": "started", "timestamp": 1624526856.63919, "task_uuid": "24fdd149-2705-45d3-bd33-c3643fc915b6", "action_type": "write_json_to_local", "task_level": [1]}
+{"link": "https://data.melbourne.vic.gov.au/resource/b2ak-trbp.json?year=2015", "action_status": "started", "timestamp": 1624526856.639242, "task_uuid": "24fdd149-2705-45d3-bd33-c3643fc915b6", "action_type": "capture api link", "task_level": [2, 1]}
+{"file_path": "data/raw/2016_file.json", "action_status": "started", "timestamp": 1624526856.6395369, "task_uuid": "20498e0e-a513-4dbd-89fb-267e91c5acd6", "action_type": "write_json_to_local", "task_level": [1]}
+{"link": "https://data.melbourne.vic.gov.au/resource/b2ak-trbp.json?year=2016", "action_status": "started", "timestamp": 1624526856.639591, "task_uuid": "20498e0e-a513-4dbd-89fb-267e91c5acd6", "action_type": "capture api link", "task_level": [2, 1]}
+{"file_path": "data/raw/2017_file.json", "action_status": "started", "timestamp": 1624526856.640268, "task_uuid": "35cd05b8-03c2-42f5-b276-8fa6f361c469", "action_type": "write_json_to_local", "task_level": [1]}
+{"link": "https://data.melbourne.vic.gov.au/resource/b2ak-trbp.json?year=2017", "action_status": "started", "timestamp": 1624526856.640449, "task_uuid": "35cd05b8-03c2-42f5-b276-8fa6f361c469", "action_type": "capture api link", "task_level": [2, 1]}
+{"file_path": "data/raw/2018_file.json", "action_status": "started", "timestamp": 1624526856.641011, "task_uuid": "2e3105fe-fb96-4e1d-b4a7-9d1ce3baddde", "action_type": "write_json_to_local", "task_level": [1]}
+{"link": "https://data.melbourne.vic.gov.au/resource/b2ak-trbp.json?year=2018", "action_status": "started", "timestamp": 1624526856.641075, "task_uuid": "2e3105fe-fb96-4e1d-b4a7-9d1ce3baddde", "action_type": "capture api link", "task_level": [2, 1]}
+{"file_path": "data/raw/2019_file.json", "action_status": "started", "timestamp": 1624526856.641501, "task_uuid": "53d7b9d1-abe3-4527-85c2-f5a8e760f883", "action_type": "write_json_to_local", "task_level": [1]}
+{"link": "https://data.melbourne.vic.gov.au/resource/b2ak-trbp.json?year=2019", "action_status": "started", "timestamp": 1624526856.641557, "task_uuid": "53d7b9d1-abe3-4527-85c2-f5a8e760f883", "action_type": "capture api link", "task_level": [2, 1]}
+{"file_path": "data/raw/2020_file.json", "action_status": "started", "timestamp": 1624526856.641872, "task_uuid": "d949a7b9-8e2b-4100-8756-7dc71ba199b0", "action_type": "write_json_to_local", "task_level": [1]}
+{"link": "https://data.melbourne.vic.gov.au/resource/b2ak-trbp.json?year=2020", "action_status": "started", "timestamp": 1624526856.641925, "task_uuid": "d949a7b9-8e2b-4100-8756-7dc71ba199b0", "action_type": "capture api link", "task_level": [2, 1]}
+{"file_path": "data/raw/2021_file.json", "action_status": "started", "timestamp": 1624526856.642224, "task_uuid": "77d8ab6b-9ba7-4fb4-bf20-fbcab91cec45", "action_type": "write_json_to_local", "task_level": [1]}
+{"link": "https://data.melbourne.vic.gov.au/resource/b2ak-trbp.json?year=2021", "action_status": "started", "timestamp": 1624526856.642275, "task_uuid": "77d8ab6b-9ba7-4fb4-bf20-fbcab91cec45", "action_type": "capture api link", "task_level": [2, 1]}
+{"status": 200, "timestamp": 1624526857.8730838, "task_uuid": "c943c931-d897-4f46-ac90-958ebc3d138c", "task_level": [2, 2], "message_type": "info"}
+{"action_status": "succeeded", "timestamp": 1624526857.8776782, "task_uuid": "c943c931-d897-4f46-ac90-958ebc3d138c", "action_type": "capture api link", "task_level": [2, 3]}
+{"number_of_rows": 1000, "timestamp": 1624526857.877781, "task_uuid": "c943c931-d897-4f46-ac90-958ebc3d138c", "task_level": [3], "message_type": "info"}
+{"action_status": "succeeded", "timestamp": 1624526857.8833568, "task_uuid": "c943c931-d897-4f46-ac90-958ebc3d138c", "action_type": "write_json_to_local", "task_level": [4]}
+{"status": 200, "timestamp": 1624526857.8919659, "task_uuid": "53d7b9d1-abe3-4527-85c2-f5a8e760f883", "task_level": [2, 2], "message_type": "info"}
+{"action_status": "succeeded", "timestamp": 1624526857.895217, "task_uuid": "53d7b9d1-abe3-4527-85c2-f5a8e760f883", "action_type": "capture api link", "task_level": [2, 3]}
+{"number_of_rows": 1000, "timestamp": 1624526857.895339, "task_uuid": "53d7b9d1-abe3-4527-85c2-f5a8e760f883", "task_level": [3], "message_type": "info"}
+{"action_status": "succeeded", "timestamp": 1624526857.9007518, "task_uuid": "53d7b9d1-abe3-4527-85c2-f5a8e760f883", "action_type": "write_json_to_local", "task_level": [4]}
+{"status": 200, "timestamp": 1624526857.912218, "task_uuid": "35cd05b8-03c2-42f5-b276-8fa6f361c469", "task_level": [2, 2], "message_type": "info"}
+{"status": 200, "timestamp": 1624526857.915584, "task_uuid": "3ac1247a-f9ba-4531-a505-af912ea61277", "task_level": [2, 2], "message_type": "info"}
+{"status": 200, "timestamp": 1624526857.9192169, "task_uuid": "d949a7b9-8e2b-4100-8756-7dc71ba199b0", "task_level": [2, 2], "message_type": "info"}
+{"action_status": "succeeded", "timestamp": 1624526857.924026, "task_uuid": "35cd05b8-03c2-42f5-b276-8fa6f361c469", "action_type": "capture api link", "task_level": [2, 3]}
+{"number_of_rows": 1000, "timestamp": 1624526857.924154, "task_uuid": "35cd05b8-03c2-42f5-b276-8fa6f361c469", "task_level": [3], "message_type": "info"}
+{"action_status": "succeeded", "timestamp": 1624526857.924289, "task_uuid": "3ac1247a-f9ba-4531-a505-af912ea61277", "action_type": "capture api link", "task_level": [2, 3]}
+{"number_of_rows": 1000, "timestamp": 1624526857.924382, "task_uuid": "3ac1247a-f9ba-4531-a505-af912ea61277", "task_level": [3], "message_type": "info"}
+{"action_status": "succeeded", "timestamp": 1624526857.924526, "task_uuid": "d949a7b9-8e2b-4100-8756-7dc71ba199b0", "action_type": "capture api link", "task_level": [2, 3]}
+{"number_of_rows": 1000, "timestamp": 1624526857.924588, "task_uuid": "d949a7b9-8e2b-4100-8756-7dc71ba199b0", "task_level": [3], "message_type": "info"}
+{"status": 200, "timestamp": 1624526857.9248, "task_uuid": "1430e477-326a-45c2-a5c5-455bdda0019d", "task_level": [2, 2], "message_type": "info"}
+{"action_status": "succeeded", "timestamp": 1624526857.931335, "task_uuid": "1430e477-326a-45c2-a5c5-455bdda0019d", "action_type": "capture api link", "task_level": [2, 3]}
+{"number_of_rows": 1000, "timestamp": 1624526857.931435, "task_uuid": "1430e477-326a-45c2-a5c5-455bdda0019d", "task_level": [3], "message_type": "info"}
+{"status": 200, "timestamp": 1624526857.931702, "task_uuid": "2e3105fe-fb96-4e1d-b4a7-9d1ce3baddde", "task_level": [2, 2], "message_type": "info"}
+{"status": 200, "timestamp": 1624526857.935625, "task_uuid": "36f89e18-ffa5-43e2-9bff-f8559c9db1a6", "task_level": [2, 2], "message_type": "info"}
+{"status": 200, "timestamp": 1624526857.939568, "task_uuid": "77d8ab6b-9ba7-4fb4-bf20-fbcab91cec45", "task_level": [2, 2], "message_type": "info"}
+{"status": 200, "timestamp": 1624526857.94291, "task_uuid": "24fdd149-2705-45d3-bd33-c3643fc915b6", "task_level": [2, 2], "message_type": "info"}
+{"status": 200, "timestamp": 1624526857.946966, "task_uuid": "91f8b30a-3160-4919-8478-07b1f5271d20", "task_level": [2, 2], "message_type": "info"}
+{"status": 200, "timestamp": 1624526857.9505432, "task_uuid": "bfb3a132-472d-46f8-b8e7-e5cabc8d02a4", "task_level": [2, 2], "message_type": "info"}
+{"action_status": "succeeded", "timestamp": 1624526857.966017, "task_uuid": "2e3105fe-fb96-4e1d-b4a7-9d1ce3baddde", "action_type": "capture api link", "task_level": [2, 3]}
+{"number_of_rows": 1000, "timestamp": 1624526857.966124, "task_uuid": "2e3105fe-fb96-4e1d-b4a7-9d1ce3baddde", "task_level": [3], "message_type": "info"}
+{"action_status": "succeeded", "timestamp": 1624526857.96625, "task_uuid": "36f89e18-ffa5-43e2-9bff-f8559c9db1a6", "action_type": "capture api link", "task_level": [2, 3]}
+{"number_of_rows": 1000, "timestamp": 1624526857.9663029, "task_uuid": "36f89e18-ffa5-43e2-9bff-f8559c9db1a6", "task_level": [3], "message_type": "info"}
+{"action_status": "succeeded", "timestamp": 1624526857.9665449, "task_uuid": "77d8ab6b-9ba7-4fb4-bf20-fbcab91cec45", "action_type": "capture api link", "task_level": [2, 3]}
+{"number_of_rows": 1000, "timestamp": 1624526857.966614, "task_uuid": "77d8ab6b-9ba7-4fb4-bf20-fbcab91cec45", "task_level": [3], "message_type": "info"}
+{"action_status": "succeeded", "timestamp": 1624526857.9666991, "task_uuid": "24fdd149-2705-45d3-bd33-c3643fc915b6", "action_type": "capture api link", "task_level": [2, 3]}
+{"number_of_rows": 1000, "timestamp": 1624526857.966748, "task_uuid": "24fdd149-2705-45d3-bd33-c3643fc915b6", "task_level": [3], "message_type": "info"}
+{"action_status": "succeeded", "timestamp": 1624526857.9669278, "task_uuid": "91f8b30a-3160-4919-8478-07b1f5271d20", "action_type": "capture api link", "task_level": [2, 3]}
+{"number_of_rows": 1000, "timestamp": 1624526857.966997, "task_uuid": "91f8b30a-3160-4919-8478-07b1f5271d20", "task_level": [3], "message_type": "info"}
+{"action_status": "succeeded", "timestamp": 1624526857.967081, "task_uuid": "bfb3a132-472d-46f8-b8e7-e5cabc8d02a4", "action_type": "capture api link", "task_level": [2, 3]}
+{"number_of_rows": 1000, "timestamp": 1624526857.9671302, "task_uuid": "bfb3a132-472d-46f8-b8e7-e5cabc8d02a4", "task_level": [3], "message_type": "info"}
+{"status": 200, "timestamp": 1624526857.9727628, "task_uuid": "20498e0e-a513-4dbd-89fb-267e91c5acd6", "task_level": [2, 2], "message_type": "info"}
+{"action_status": "succeeded", "timestamp": 1624526858.0007129, "task_uuid": "20498e0e-a513-4dbd-89fb-267e91c5acd6", "action_type": "capture api link", "task_level": [2, 3]}
+{"number_of_rows": 1000, "timestamp": 1624526858.0008352, "task_uuid": "20498e0e-a513-4dbd-89fb-267e91c5acd6", "task_level": [3], "message_type": "info"}
+{"action_status": "succeeded", "timestamp": 1624526858.00159, "task_uuid": "35cd05b8-03c2-42f5-b276-8fa6f361c469", "action_type": "write_json_to_local", "task_level": [4]}
+{"action_status": "succeeded", "timestamp": 1624526858.0021682, "task_uuid": "3ac1247a-f9ba-4531-a505-af912ea61277", "action_type": "write_json_to_local", "task_level": [4]}
+{"action_status": "succeeded", "timestamp": 1624526858.002657, "task_uuid": "d949a7b9-8e2b-4100-8756-7dc71ba199b0", "action_type": "write_json_to_local", "task_level": [4]}
+{"action_status": "succeeded", "timestamp": 1624526858.00435, "task_uuid": "1430e477-326a-45c2-a5c5-455bdda0019d", "action_type": "write_json_to_local", "task_level": [4]}
+{"action_status": "succeeded", "timestamp": 1624526858.005217, "task_uuid": "2e3105fe-fb96-4e1d-b4a7-9d1ce3baddde", "action_type": "write_json_to_local", "task_level": [4]}
+{"action_status": "succeeded", "timestamp": 1624526858.0060532, "task_uuid": "91f8b30a-3160-4919-8478-07b1f5271d20", "action_type": "write_json_to_local", "task_level": [4]}
+{"action_status": "succeeded", "timestamp": 1624526858.006922, "task_uuid": "24fdd149-2705-45d3-bd33-c3643fc915b6", "action_type": "write_json_to_local", "task_level": [4]}
+{"action_status": "succeeded", "timestamp": 1624526858.011838, "task_uuid": "77d8ab6b-9ba7-4fb4-bf20-fbcab91cec45", "action_type": "write_json_to_local", "task_level": [4]}
+{"action_status": "succeeded", "timestamp": 1624526858.0125172, "task_uuid": "36f89e18-ffa5-43e2-9bff-f8559c9db1a6", "action_type": "write_json_to_local", "task_level": [4]}
+{"action_status": "succeeded", "timestamp": 1624526858.0132868, "task_uuid": "bfb3a132-472d-46f8-b8e7-e5cabc8d02a4", "action_type": "write_json_to_local", "task_level": [4]}
+{"action_status": "succeeded", "timestamp": 1624526858.0142689, "task_uuid": "20498e0e-a513-4dbd-89fb-267e91c5acd6", "action_type": "write_json_to_local", "task_level": [4]}
+{"file_path": "data/file.json", "action_status": "started", "timestamp": 1624526858.015844, "task_uuid": "86a3b4be-92ed-4286-a3c4-57336e1e1cad", "action_type": "write_json_to_local", "task_level": [1]}
+{"link": "https://data.melbourne.vic.gov.au/resource/h57g-5234.json", "action_status": "started", "timestamp": 1624526858.015958, "task_uuid": "86a3b4be-92ed-4286-a3c4-57336e1e1cad", "action_type": "capture api link", "task_level": [2, 1]}
+{"status": 200, "timestamp": 1624526859.1193979, "task_uuid": "86a3b4be-92ed-4286-a3c4-57336e1e1cad", "task_level": [2, 2], "message_type": "info"}
+{"action_status": "succeeded", "timestamp": 1624526859.1208608, "task_uuid": "86a3b4be-92ed-4286-a3c4-57336e1e1cad", "action_type": "capture api link", "task_level": [2, 3]}
+{"number_of_rows": 77, "timestamp": 1624526859.1210072, "task_uuid": "86a3b4be-92ed-4286-a3c4-57336e1e1cad", "task_level": [3], "message_type": "info"}
+{"action_status": "succeeded", "timestamp": 1624526859.123421, "task_uuid": "86a3b4be-92ed-4286-a3c4-57336e1e1cad", "action_type": "write_json_to_local", "task_level": [4]}
+{"read_from": "data/raw/*", "action_status": "started", "timestamp": 1624526864.319296, "task_uuid": "c08ab28b-e784-4421-848a-8f58a77746f6", "action_type": "read_from_loc", "task_level": [1]}
+{"number_of_observations": 13000, "timestamp": 1624526870.492471, "task_uuid": "c08ab28b-e784-4421-848a-8f58a77746f6", "task_level": [2], "message_type": "info"}
+{"action_status": "succeeded", "timestamp": 1624526870.4926012, "task_uuid": "c08ab28b-e784-4421-848a-8f58a77746f6", "action_type": "read_from_loc", "task_level": [3]}
+{"read_from": "data/file.json", "action_status": "started", "timestamp": 1624526870.750054, "task_uuid": "6f4a9d27-adb4-4d34-ba7d-0c618613a491", "action_type": "read_from_loc", "task_level": [1]}
+{"number_of_observations": 77, "timestamp": 1624526871.1834009, "task_uuid": "6f4a9d27-adb4-4d34-ba7d-0c618613a491", "task_level": [2], "message_type": "info"}
+{"action_status": "succeeded", "timestamp": 1624526871.1835399, "task_uuid": "6f4a9d27-adb4-4d34-ba7d-0c618613a491", "action_type": "read_from_loc", "task_level": [3]}
+{"write_to": "data/staging", "action_status": "started", "timestamp": 1624526871.319278, "task_uuid": "1d0615a1-048e-47d2-8772-9e6ef24fb85b", "action_type": "read_from_loc", "task_level": [1]}
+{"action_status": "succeeded", "timestamp": 1624526875.2741709, "task_uuid": "1d0615a1-048e-47d2-8772-9e6ef24fb85b", "action_type": "read_from_loc", "task_level": [2]}
+{"write_to": "data/top_10_loc_by_day", "action_status": "started", "timestamp": 1624526875.670068, "task_uuid": "2de3842e-319b-465f-a10d-5c60bf132e7a", "action_type": "read_from_loc", "task_level": [1]}
+{"action_status": "succeeded", "timestamp": 1624526878.5175529, "task_uuid": "2de3842e-319b-465f-a10d-5c60bf132e7a", "action_type": "read_from_loc", "task_level": [2]}
+{"write_to": "data/top_10_loc_by_month", "action_status": "started", "timestamp": 1624526878.5711958, "task_uuid": "c79c8557-bd63-4b90-955a-fd19a779268a", "action_type": "read_from_loc", "task_level": [1]}
+{"action_status": "succeeded", "timestamp": 1624526879.951526, "task_uuid": "c79c8557-bd63-4b90-955a-fd19a779268a", "action_type": "read_from_loc", "task_level": [2]}

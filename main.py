@@ -27,12 +27,12 @@ async def api_deploy(
     if years is not None:
         tasks = []
         for year in years:
-            tasks.append(apiCall.write_json_to_s3(year))
+            tasks.append(apiCall.write_json_to_local(year))
 
         return await asyncio.gather(*tasks)
 
     else:
-        return await apiCall.write_json_to_s3()
+        return await apiCall.write_json_to_local()
 
 
 def etl_deploy(
@@ -60,9 +60,12 @@ def etl_deploy(
     )
 
     hg_df = read_from_loc(spark, read_from_2)
-    hg_df = hg_df.withColumn(
-        "installation_date", f.to_timestamp("installation_date")
-    ).drop("location", "note", "sensor_name")
+    hg_df = (
+        hg_df.withColumn("installation_date", f.to_timestamp("installation_date"))
+        .withColumn("latitude", f.col("latitude").cast("float"))
+        .withColumn("longitude", f.col("longitude").cast("float"))
+        .drop("location", "note", "sensor_name")
+    )
 
     df = trip_df.join(hg_df, on="sensor_id", how="left")
 
@@ -125,11 +128,11 @@ def main(
 ):
 
     dir_name_1 = f"{dir_name}/raw"
-    read_from = f"{dir_name}/raw/*"  # f"s3a://{bucket}/{dir_name_1}/*"
-    read_from2 = f"{dir_name}/file.json"  # f"s3a://{bucket}/{dir_name}/file.json"
-    write_to_1 = f"{dir_name}/staging"  # f"s3a://{bucket}/{dir_name}/staging"
-    write_to_2 = f"{dir_name}/top_10_loc_by_day"  # f"s3a://{bucket}/{dir_name}/top_10_loc_by_day"
-    write_to_3 = f"{dir_name}/top_10_loc_by_month"  # f"s3a://{bucket}/{dir_name}/top_10_loc_by_month"
+    read_from = f"s3a://{bucket}/{dir_name_1}/*"  # f"{dir_name}/raw/*"
+    read_from2 = f"s3a://{bucket}/{dir_name}/file.json"  # f"{dir_name}/file.json"
+    write_to_1 = f"s3a://{bucket}/{dir_name}/staging"  # f"{dir_name}/staging"
+    write_to_2 = f"s3a://{bucket}/{dir_name}/top_10_loc_by_day"  # f"{dir_name}/top_10_loc_by_day"
+    write_to_3 = f"s3a://{bucket}/{dir_name}/top_10_loc_by_month"  # f"{dir_name}/top_10_loc_by_month"
 
     asyncio.run(api_deploy(url, dir_name_1, bucket, years))
     asyncio.run(api_deploy(url2, dir_name, bucket))
@@ -140,7 +143,6 @@ def main(
         .config("spark.sql.execution.arrow.pyspark.enabled", "true")
         .config("spark.hadoop.fs.s3a.access.key", AWS_ACCESS_KEY_ID)
         .config("spark.hadoop.fs.s3a.secret.key", AWS_SECRET_ACCESS_KEY)
-        .config("spark.hadoop.fs.s3a.impl", "org.apache.hadoop.fs.s3a.S3AFileSystem")
         .appName("tranform")
         .getOrCreate()
     )
