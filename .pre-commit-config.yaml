@@ -3,12 +3,6 @@ repos:
     rev: v2.3.0
     hooks:
     - id: check-yaml
-    - id: end-of-file-fixer
-    - id: trailing-whitespace
-    - id: check-docstring-first
-    - id: check-merge-conflict
-    - id: mixed-line-ending
-      args: [--fix=lf]
 -   repo: https://github.com/ambv/black
     # black: automatic code re-formatter
     rev: stable

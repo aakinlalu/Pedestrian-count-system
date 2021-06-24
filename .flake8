@@ -1,5 +1,5 @@
 [flake8]
 ignore = E501,F401,F811,F841
-exclude = .git,__pycache__,docs/source/conf.py,old,build,dist
+exclude = .git,__pycache__,docs/source/conf.py,old,build,dist,README.md
 max-complexity = 10
 max-line-length=127
