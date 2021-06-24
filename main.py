@@ -27,12 +27,12 @@ async def api_deploy(
     if years is not None:
         tasks = []
         for year in years:
-            tasks.append(apiCall.write_json_to_local(year))
+            tasks.append(apiCall.write_json_to_s3(year))
 
         return await asyncio.gather(*tasks)
 
     else:
-        return await apiCall.write_json_to_local()
+        return await apiCall.write_json_to_s3()
 
 
 def etl_deploy(
