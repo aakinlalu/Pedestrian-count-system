@@ -3,19 +3,19 @@
 
 ### Code structure
 ---
-pedenstrian-count-system
-    |-configs
-    ||-configs.py
-    |-data
-    |-dashboard
-    |   |-app.py
-    |-logger
-    |   |-logger.py
-    |-pedestrian_count_system
-    |   |-api_call.py
-    |   |-etl.py
-    |-tests
-    |-main.py
+pedenstrian-count-system  
+    |-configs  
+    ||-configs.py   
+    |-data  
+    |-dashboard  
+    |   |-app.py  
+    |-logger  
+    |   |-logger.py  
+    |-pedestrian_count_system  
+    |   |-api_call.py  
+    |   |-etl.py  
+    |-tests  
+    |-main.py  
 
 ### Component Definition
 ---
