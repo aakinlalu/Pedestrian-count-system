@@ -4,7 +4,7 @@ import fire
 import pyspark.sql.functions as f
 from pyspark.sql import SparkSession
 
-from configs.configs import AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY
+from configs.configs import spark
 from pedestrian_count_system.api_call import APIUrl
 from pedestrian_count_system.etl import read_from_loc, write_to_loc
 
@@ -27,12 +27,12 @@ async def api_deploy(
     if years is not None:
         tasks = []
         for year in years:
-            tasks.append(apiCall.write_json_to_local(year))
+            tasks.append(apiCall.write_json_to_s3(year))
 
         return await asyncio.gather(*tasks)
 
     else:
-        return await apiCall.write_json_to_local()
+        return await apiCall.write_json_to_s3()
 
 
 def etl_deploy(
@@ -128,24 +128,20 @@ def main(
 ):
 
     dir_name_1 = f"{dir_name}/raw"
-    read_from = f"s3a://{bucket}/{dir_name_1}/*"  # f"{dir_name}/raw/*"
-    read_from2 = f"s3a://{bucket}/{dir_name}/file.json"  # f"{dir_name}/file.json"
-    write_to_1 = f"s3a://{bucket}/{dir_name}/staging"  # f"{dir_name}/staging"
-    write_to_2 = f"s3a://{bucket}/{dir_name}/top_10_loc_by_day"  # f"{dir_name}/top_10_loc_by_day"
-    write_to_3 = f"s3a://{bucket}/{dir_name}/top_10_loc_by_month"  # f"{dir_name}/top_10_loc_by_month"
+    read_from = f"s3a://{bucket}/{dir_name_1}/*"
+    read_from2 = f"s3a://{bucket}/{dir_name}/file.json"
+    write_to_1 = f"s3a://{bucket}/{dir_name}/staging"
+    write_to_2 = f"s3a://{bucket}/{dir_name}/top_10_loc_by_day"
+    write_to_3 = f"s3a://{bucket}/{dir_name}/top_10_loc_by_month"
+
+    # read_from=f"{dir_name}/raw/*"
+    # read_from2= f"{dir_name}/file.json"
+    # write_to_1=f"{dir_name}/staging"
+    # write_to_2=f"{dir_name}/top_10_loc_by_day"
+    # write_to_3=f"{dir_name}/top_10_loc_by_month"
 
     asyncio.run(api_deploy(url, dir_name_1, bucket, years))
     asyncio.run(api_deploy(url2, dir_name, bucket))
-
-    spark = (
-        SparkSession.builder.master("local[*]")
-        .config("spark.sql.shuffle.partitions", 6)
-        .config("spark.sql.execution.arrow.pyspark.enabled", "true")
-        .config("spark.hadoop.fs.s3a.access.key", AWS_ACCESS_KEY_ID)
-        .config("spark.hadoop.fs.s3a.secret.key", AWS_SECRET_ACCESS_KEY)
-        .appName("tranform")
-        .getOrCreate()
-    )
 
     etl_deploy(spark, read_from, read_from2, write_to_1, write_to_2, write_to_3)
 

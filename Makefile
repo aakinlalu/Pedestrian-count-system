@@ -29,4 +29,4 @@ run:
 		${POETRY} run python main.py
 
 deploy-dash:
-		${POETRY} run streamlit dashboard/app.py
+		${POETRY} run streamlit run dashboard/app.py &
