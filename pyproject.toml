@@ -6,7 +6,7 @@ authors = ["Adebayo Akinlalu <bayoakinlalu@yahoo.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8.5"
-pyspark = "^3.2.2"
+pyspark = "^3.3.2"
 pandas = "^1.2.4"
 streamlit = "^1.11.1"
 aiohttp = "^3.9.4"
